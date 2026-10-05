@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ROOM CHECK – Room 304</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070913;--panel:#10162f;--deep:#0b0f1f;--t1:#f1f5f9;--t2:#cbd5e1;--t3:#94a3b8;--vi:#7c3aed;--gr:#10b981;--gr2:#34d399;--ro:#f43f5e;--ro2:#fb7185;--glass:rgba(16,22,47,.65);--line:rgba(255,255,255,.08)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--t2);font-family:'Plus Jakarta Sans',sans-serif;overflow-x:hidden;position:relative}
+.mono{font-family:'JetBrains Mono',monospace}
+.glow{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none;z-index:0}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px;position:relative;z-index:1}
+section{border-top:1px solid rgba(255,255,255,.05);padding:80px 0}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--t1)}
+h2{font-size:36px;font-weight:800;letter-spacing:-.9px;color:#fff;line-height:40px}
+.sub{font-size:16px;color:var(--t3)}
+.center{text-align:center;max-width:768px;margin:0 auto 64px}
+.glass{background:var(--glass);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:16px;box-shadow:0 20px 40px -15px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.1)}
+.grad-t{background:linear-gradient(90deg,#c084fc,#8b5cf6,#818cf8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;flex:none}
+.pill{display:inline-flex;align-items:center;gap:8px;border-radius:999px}
+.row{display:flex;align-items:center}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(7,9,19,.75);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+header .wrap{height:80px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;gap:12px;align-items:center}
+.logo i{width:40px;height:40px;border-radius:12px;padding:1px;background:linear-gradient(45deg,#7c3aed,#6366f1,#c084fc);box-shadow:0 10px 15px -3px rgba(124,58,237,.3);display:grid;place-items:center}
+.logo i b{width:100%;height:100%;border-radius:11px;background:var(--deep);display:grid;place-items:center;font-size:20px}
+.logo strong{font-size:20px;font-weight:800;letter-spacing:-.5px;background:linear-gradient(90deg,#fff,#f1f5f9,#e9d5ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tag{font-size:10px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;color:var(--t1);background:rgba(139,92,246,.2);border:1px solid rgba(139,92,246,.3);padding:3px 9px;border-radius:999px;margin-left:10px}
+nav{display:flex;gap:32px;font-size:14px;font-weight:500;color:var(--t2)}
+nav a:hover{color:#fff}
+.status{font-size:11px;background:rgba(16,22,47,.8);border:1px solid rgba(255,255,255,.1);padding:7px 15px}
+.ping{position:relative}
+.ping:before{content:"";position:absolute;inset:0;border-radius:50%;background:var(--gr2);opacity:.75;animation:p 1.6s infinite}
+@keyframes p{to{transform:scale(2.4);opacity:0}}
+.btn{background:linear-gradient(90deg,#7c3aed,#4f46e5);color:#fff;font-weight:600;font-size:14px;padding:8px 16px;border-radius:8px;box-shadow:0 4px 6px -1px rgba(124,58,237,.3)}
+/* hero */
+.hero{display:grid;grid-template-columns:7fr 5fr;gap:32px;align-items:center;padding:96px 0 128px;position:relative;z-index:1}
+.badge{background:rgba(88,28,135,.4);border:1px solid rgba(168,85,247,.3);color:#d8b4fe;font-size:12px;font-weight:600;letter-spacing:.3px;text-transform:uppercase;padding:7px 15px}
+.hero h1{font-size:60px;line-height:60px;font-weight:800;letter-spacing:-1.5px;color:#fff;margin:24px 0}
+.hero p.lead{font-size:20px;line-height:28px;max-width:672px}
+.cta{display:flex;gap:16px;padding:32px 0 24px;flex-wrap:wrap}
+.cta a{display:inline-flex;gap:12px;align-items:center;padding:16px 32px;border-radius:12px;font-weight:700}
+.cta .p{background:linear-gradient(90deg,#7c3aed,#4f46e5,#9333ea);color:#fff;box-shadow:0 20px 25px -5px rgba(124,58,237,.35)}
+.cta .s{background:var(--panel);border:1px solid rgba(255,255,255,.1);font-weight:600;padding:16px 28px}
+.micro{display:flex;gap:24px;font-size:12px;font-weight:500;color:var(--t3);flex-wrap:wrap}
+.micro span{display:flex;gap:8px;align-items:center}
+.mock{position:relative}
+.mock:before{content:"";position:absolute;inset:-4px;border-radius:24px;background:linear-gradient(90deg,#7c3aed,#4f46e5);filter:blur(20px);opacity:.4}
+.mock>div{position:relative;padding:29px;display:flex;flex-direction:column;gap:20px}
+.mh{display:flex;justify-content:space-between;align-items:center;padding-bottom:21px;border-bottom:1px solid rgba(255,255,255,.1);font-size:12px;color:var(--t3)}
+.mh .d{width:12px;height:12px;border-radius:50%;margin-right:12px}
+.live{background:rgba(16,185,129,.2);border:1px solid rgba(16,185,129,.3);color:#6ee7b7;font-size:11px;padding:5px 11px;border-radius:4px}
+.snap{background:rgba(11,15,31,.8);border:1px solid rgba(255,255,255,.05);border-radius:12px;padding:17px;display:flex;flex-direction:column;gap:16px}
+.snap .top{display:flex;justify-content:space-between;font-size:12px;color:var(--t3)}
+.mini{display:flex;gap:12px}
+.mini>div{flex:1;padding:13px;border-radius:8px;font-size:11px;color:var(--t3)}
+.mini b.n{display:block;font-size:24px;line-height:32px;font-weight:800;color:#fff}
+.mini em{font-style:normal;font-weight:600;letter-spacing:.55px;text-transform:uppercase}
+.mini .in{background:rgba(2,44,34,.4);border:1px solid rgba(16,185,129,.3)}.mini .in em{color:var(--gr2)}
+.mini .out{background:rgba(76,5,25,.4);border:1px solid rgba(244,63,94,.3)}.mini .out em{color:var(--ro2)}
+.tap{background:rgba(16,22,47,.9);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:13px;display:flex;justify-content:space-between;align-items:center;font-size:12px}
+.av-s{width:32px;height:32px;border-radius:50%;background:rgba(147,51,234,.3);border:1px solid rgba(192,132,252,.4);color:#e9d5ff;font-weight:700;display:grid;place-items:center;margin-right:10px}
+.mb{font-size:11px;font-weight:700;padding:5px 10px;border-radius:4px;border:0;font-family:inherit;cursor:pointer}
+.mb.y{background:var(--gr);color:var(--bg)}.mb.n{background:rgba(244,63,94,.3);border:1px solid rgba(244,63,94,.4);color:#fda4af}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.step{padding:33px;position:relative;overflow:hidden}
+.step:after{content:"";position:absolute;right:-40px;top:-40px;width:128px;height:128px;border-radius:50%;filter:blur(20px);background:var(--c);opacity:.12}
+.num{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;font-size:24px;font-weight:800;border:1px solid;margin-bottom:24px}
+.step h3{font-size:20px;color:#fff;margin-bottom:12px}
+.step p{font-size:14px;line-height:22.75px;color:var(--t3);min-height:92px}
+.step footer{border-top:1px solid rgba(255,255,255,.05);margin-top:12px;padding-top:17px;font-size:12px;font-weight:600}
+code{font-family:'JetBrains Mono',monospace;color:#d8b4fe}
+/* stats */
+.shead{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px;flex-wrap:wrap;gap:16px}
+.shead h2{font-size:30px;line-height:36px;letter-spacing:-.75px}
+.live-pill{background:rgba(11,15,31,.9);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:9px 15px;font-size:12px;color:var(--t3)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.stat{padding:26px 25px 25px;border-top:2px solid var(--c)}
+.stat .t{display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;letter-spacing:.6px;text-transform:uppercase}
+.ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:18px;background:color-mix(in srgb,var(--c) 12%,transparent)}
+.stat .v{display:flex;gap:8px;align-items:baseline;margin:16px 0;font-size:12px;color:var(--t3);font-weight:500}
+.stat .v b{font-size:36px;line-height:40px;font-weight:800;color:var(--vc,#fff)}
+.stat .l{display:flex;justify-content:space-between;font-size:12px;color:var(--t3);margin-bottom:6px}
+.bar{height:8px;border-radius:999px;background:var(--deep);overflow:hidden}.bar i{display:block;height:100%;border-radius:999px;transition:width .4s}
+/* members */
+.mhead{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;flex-wrap:wrap;gap:16px}
+.chip{display:inline-block;background:rgba(139,92,246,.1);border:1px solid rgba(139,92,246,.2);color:var(--t1);font-size:12px;font-weight:600;padding:5px 13px;border-radius:999px;margin-bottom:8px}
+.filters{display:flex;gap:8px}
+.f{font-family:inherit;font-size:12px;font-weight:600;padding:7px 13px;border-radius:8px;background:var(--panel);border:1px solid;cursor:pointer}
+.f.on{background:var(--vi);color:#fff;border-color:var(--vi)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.card{padding:25px;border-radius:16px;backdrop-filter:blur(8px);background:rgba(11,15,31,.6);border:1px solid rgba(16,185,129,.25);box-shadow:0 20px 40px -15px rgba(0,0,0,.5)}
+.card.out{background:rgba(11,15,31,.4);border-color:rgba(244,63,94,.2)}
+.card .h{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.av{position:relative;width:56px;height:56px;border-radius:16px;padding:2px;box-shadow:0 10px 15px -3px rgba(0,0,0,.1)}
+.av b{display:grid;place-items:center;width:100%;height:100%;border-radius:14px;background:var(--bg);color:#fff;font-weight:800;font-size:16px}
+.av s{position:absolute;right:-6px;bottom:-6px;width:20px;height:20px;border-radius:50%;border:2px solid var(--bg)}
+.bd{display:inline-flex;gap:6px;align-items:center;font-size:12px;font-weight:700;padding:5px 13px;border-radius:999px}
+.bd.in{background:rgba(16,185,129,.15);border:1px solid rgba(16,185,129,.3);color:var(--gr2)}
+.bd.out{background:rgba(244,63,94,.12);border:1px solid rgba(244,63,94,.25);color:var(--ro2)}
+.card h3{font-size:18px;color:#fff;letter-spacing:-.45px;line-height:28px}
+.card .sm{font-size:12px}
+.act{border-top:1px solid rgba(255,255,255,.05);margin-top:20px;padding-top:17px}
+.act .lab{display:flex;justify-content:space-between;font-size:11px;font-weight:600;letter-spacing:.55px;text-transform:uppercase;margin-bottom:8px}
+.act .bt{display:flex;gap:8px}
+.act button{flex:1;font-family:inherit;font-size:12px;font-weight:700;padding:11px 0;border-radius:12px;background:var(--panel);cursor:pointer;border:1px solid;transition:.2s}
+.act .yes{color:var(--gr2);border-color:rgba(16,185,129,.3)}.act .no{color:var(--ro2);border-color:rgba(244,63,94,.3)}
+.act .yes.on{background:var(--gr);color:var(--bg);border-color:var(--gr);box-shadow:0 0 0 2px var(--gr2)}
+.act .no.on{background:var(--ro);color:#fff;border-color:var(--ro);box-shadow:0 0 0 2px var(--ro2)}
+/* map */
+.plan{border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:41px;display:grid;grid-template-columns:7fr 5fr;gap:32px}
+.zone{border:2px dashed;border-radius:16px;padding:34px;min-height:380px;display:flex;flex-direction:column;justify-content:space-between}
+.zone.i{border-color:rgba(139,92,246,.3);background:radial-gradient(circle,rgba(124,58,237,.1),rgba(7,9,19,.7))}
+.zone.o{border-color:rgba(244,63,94,.2);background:radial-gradient(circle,rgba(244,63,94,.06),rgba(7,9,19,.6))}
+.zh{display:flex;justify-content:space-between;align-items:center;padding-bottom:17px;border-bottom:1px solid;gap:8px}
+.i .zh,.i .zf{border-color:rgba(168,85,247,.2)}.o .zh,.o .zf{border-color:rgba(244,63,94,.2)}
+.zh h3{font-size:18px;color:#fff;display:flex;gap:8px;align-items:center}
+.zc{font-size:12px;font-weight:700;padding:5px 13px;border-radius:999px}
+.zone.i .zc{background:rgba(16,185,129,.2);border:1px solid rgba(16,185,129,.3);color:#6ee7b7}
+.zone.o .zc{background:rgba(244,63,94,.2);border:1px solid rgba(244,63,94,.3);color:#fda4af}
+.pp{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;padding:32px 0;min-height:160px;align-items:center}
+.p1{text-align:center;font-size:12px;font-weight:600;color:#e2e8f0;text-transform:capitalize;position:relative}
+.p1 .av{margin:0 auto 8px;width:64px;height:64px}.p1 .av b{background:var(--deep)}
+.p1 .av s{right:-4px;top:-4px;bottom:auto;width:16px;height:16px;background:var(--gr2)}
+.p1 small{display:block;font:400 10px 'JetBrains Mono',monospace;color:rgba(52,211,153,.9);margin-top:4px}
+.o .p1{opacity:.8;font-weight:500;color:var(--t3)}.o .p1 .av{width:56px;height:56px;background:#161d3d;border:1px solid rgba(255,255,255,.1)}
+.o .p1 .av b{color:var(--t2);font-size:14px}.o .p1 .av s{background:var(--ro);width:14px;height:14px}.o .p1 small{color:var(--ro2)}
+.zf{border-top:1px solid;padding-top:17px;display:flex;justify-content:space-between;font-size:12px;color:var(--t3);gap:8px;flex-wrap:wrap}
+.zo .zf{justify-content:center}
+/* feed */
+.feed{padding:33px}
+.fr{display:flex;justify-content:space-between;align-items:center;padding:13px 8px;border-top:1px solid rgba(255,255,255,.05)}
+.fr:first-child{border:0}
+.fi{width:32px;height:32px;border-radius:8px;display:grid;place-items:center;margin-right:12px;font-size:14px}
+.fr b{color:#fff;font-size:14px;text-transform:capitalize;margin-right:7px}.fr span{font-size:12px;font-weight:600}
+.rst{font-family:inherit;font-size:12px;color:var(--t3);background:var(--deep);border:1px solid rgba(255,255,255,.1);padding:7px 13px;border-radius:8px;cursor:pointer}
+/* footer */
+footer.main{border-top:1px solid rgba(255,255,255,.05);padding:65px 0 0}
+.fm{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.fl{display:flex;gap:24px;font-size:14px}.fl a:hover{color:#fff}
+.copy{border-top:1px solid rgba(255,255,255,.05);margin-top:40px;padding:25px 0 32px;text-align:center;font-size:12px;color:var(--t3)}
+@media(max-width:1024px){nav{display:none}.cards{grid-template-columns:repeat(2,1fr)}.hero,.plan,.steps,.stats{grid-template-columns:1fr}.hero h1{font-size:44px;line-height:48px}.status{display:none}}
+@media(max-width:600px){.cards{grid-template-columns:1fr}.wrap{padding:0 20px}h2{font-size:28px}.plan{padding:20px}.zone{padding:20px}}
+</style>
+</head>
+<body>
+<div class="glow" style="left:320px;top:0;width:384px;height:384px;background:rgba(124,58,237,.18)"></div>
+<div class="glow" style="left:920px;top:400px;width:320px;height:320px;background:rgba(79,70,229,.15)"></div>
+
+<header>
+  <div class="wrap">
+    <a href="#top" class="logo"><i><b>🏠</b></i><strong>ROOM CHECK</strong><span class="tag">Room 304</span></a>
+    <nav>
+      <a href="#how">How It Works</a><a href="#live">Live Status</a><a href="#members">Room Members</a><a href="#map">Virtual Room</a><a href="#activity">Activity Log</a>
+    </nav>
+    <div class="row" style="gap:12px">
+      <div class="pill status mono"><span class="dot ping" style="background:var(--gr)"></span><span id="hdrStatus">4 in room • 3 outside</span></div>
+      <a href="#members" class="btn">Update My Status</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<div class="wrap hero">
+  <div>
+    <span class="pill badge">✦ No more awkward phone calls</span>
+    <h1>Know who’s in the room<br><span class="grad-t">without making a call.</span></h1>
+    <p class="lead">Seven roommates, one smart shared space. Check real-time presence before heading back, locking the door, or turning off the AC. Just tap <b style="color:var(--gr2)">YES</b> or <b style="color:var(--ro2)">NO</b>.</p>
+    <div class="cta">
+      <a href="#live" class="p">Check Room Status →</a>
+      <a href="#how" class="s">▶ See How It Works</a>
+    </div>
+    <div class="micro">
+      <span><i class="dot" style="background:var(--gr2)"></i>100% Real-Time &amp; Offline Sync</span>
+      <span><i class="dot" style="background:#8b5cf6"></i>No Password Or Logins</span>
+      <span><i class="dot" style="background:#818cf8"></i>Auto-Saves to Device</span>
+    </div>
+  </div>
+  <div class="mock">
+    <div class="glass">
+      <div class="mh"><div class="row"><i class="d" style="background:#f43f5e"></i><i class="d" style="background:#f59e0b"></i><i class="d" style="background:#10b981"></i><span class="mono">room-304-live.local</span></div><span class="live mono">● LIVE</span></div>
+      <div class="snap">
+        <div class="top"><span style="font-weight:500">Roommate Quick Scan</span><span class="mono" style="color:var(--t1)">Updated recently</span></div>
+        <div class="mini">
+          <div class="in"><em>● In Room</em><b class="n" id="heroIn">4</b><span id="heroInN">Dharshan, Kathirvel +2</span></div>
+          <div class="out"><em>● Outside</em><b class="n" id="heroOut">3</b><span id="heroOutN">moulipriyan, ravikaran +1</span></div>
+        </div>
+        <div class="tap">
+          <div class="row"><span class="av-s">DH</span><div><b style="color:#fff">Dharshan</b><br><span style="font-size:10px;color:var(--t3)">Tap to test toggle</span></div></div>
+          <div class="row" style="gap:6px"><button class="mb y" onclick="setStatus(0,true)">YES</button><button class="mb n" onclick="setStatus(0,false)">NO</button></div>
+        </div>
+      </div>
+      <div class="row" style="justify-content:space-between;font-size:11px;color:var(--t3)"><span>Room #304 • 7 Occupants</span><a href="#members" style="color:#d8b4fe">Open Full Board →</a></div>
+    </div>
+  </div>
+</div>
+
+<section id="how"><div class="wrap">
+  <div class="center">
+    <div class="eyebrow">Effortless &amp; Simple</div>
+    <h2 style="margin:12px 0">How It Works in 3 Steps</h2>
+    <p class="sub">Designed for instant use when stepping out for class, gym, mess, or tea break. Zero login friction.</p>
+  </div>
+  <div class="steps">
+    <div class="glass step" style="--c:#7c3aed"><div class="num" style="background:rgba(139,92,246,.2);border-color:rgba(139,92,246,.3);color:var(--t1)">1</div><h3>Open the Website</h3><p>Bookmark <code>ROOM CHECK</code> on your phone home screen or browser. Access the shared room dashboard with a single tap anytime.</p><footer style="color:var(--t1)">⚡ Instant load on any mobile</footer></div>
+    <div class="glass step" style="--c:#4f46e5"><div class="num" style="background:rgba(99,102,241,.2);border-color:rgba(99,102,241,.3);color:#818cf8">2</div><h3>Find Your Name</h3><p>Locate your dedicated card among the 7 roommates. Each member has their personalized profile avatar, quick action buttons, and last-seen activity tracker.</p><footer style="color:#818cf8">👥 Permanent roster of 7 friends</footer></div>
+    <div class="glass step" style="--c:#059669"><div class="num" style="background:rgba(16,185,129,.2);border-color:rgba(16,185,129,.3);color:var(--gr2)">3</div><h3>Tap YES or NO</h3><p>Tap <b style="color:var(--gr2)">YES</b> when entering the room. Tap <b style="color:var(--ro2)">NO</b> when stepping out. All counters, graphs, and the room map sync instantly!</p><footer style="color:var(--gr2)">✓ Auto-saved in localStorage</footer></div>
+  </div>
+</div></section>
+
+<section id="live" style="padding:64px 0"><div class="wrap">
+  <div class="shead">
+    <div><div class="eyebrow" style="color:var(--gr2)">Real-Time Metrics</div><h2>Live Room Status</h2></div>
+    <div class="live-pill row" style="gap:8px"><i class="dot" style="background:var(--gr2)"></i>Live telemetry active • Syncs with every click</div>
+  </div>
+  <div class="stats">
+    <div class="glass stat" style="--c:#6366f1"><div class="t" style="color:var(--t3)">Total Roommates<span class="ic">👥</span></div><div class="v"><b>7</b>Registered members</div><div class="l"><span>Room 304 Capacity</span><span>100% Configured</span></div><div class="bar"><i style="width:100%;background:#6366f1"></i></div></div>
+    <div class="glass stat" style="--c:#10b981;--vc:var(--gr2)"><div class="t" style="color:var(--gr2)"><span class="row" style="gap:6px"><i class="dot" style="background:var(--gr2)"></i>In Room</span><span class="ic">✓</span></div><div class="v"><b id="sIn">4</b><span id="sInT">4 Members Inside</span></div><div class="l"><span>Room Occupancy</span><span class="mono" style="color:var(--gr2)" id="sInP">57%</span></div><div class="bar"><i id="bIn" style="width:57%;background:linear-gradient(90deg,#10b981,#2dd4bf)"></i></div></div>
+    <div class="glass stat" style="--c:#f43f5e;--vc:var(--ro2)"><div class="t" style="color:var(--ro2)"><span class="row" style="gap:6px"><i class="dot" style="background:var(--ro2)"></i>Outside</span><span class="ic">↗</span></div><div class="v"><b id="sOut">3</b><span id="sOutT">3 Members Outside</span></div><div class="l"><span>Away Ratio</span><span class="mono" style="color:var(--ro2)" id="sOutP">43%</span></div><div class="bar"><i id="bOut" style="width:43%;background:linear-gradient(90deg,#f43f5e,#ec4899)"></i></div></div>
+  </div>
+</div></section>
+
+<section id="members"><div class="wrap">
+  <div class="mhead">
+    <div><span class="chip">Instant Toggle • No Login Required</span><h2>Room Members (7)</h2><p class="sub" style="margin-top:4px">Tap your status below whenever you leave or enter Room 304.</p></div>
+    <div class="filters">
+      <button class="f on" data-f="all">All (7)</button>
+      <button class="f" data-f="in" style="color:var(--gr2);border-color:rgba(16,185,129,.3)">In Room (<span id="fIn">4</span>)</button>
+      <button class="f" data-f="out" style="color:var(--ro2);border-color:rgba(244,63,94,.3)">Outside (<span id="fOut">3</span>)</button>
+    </div>
+  </div>
+  <div class="cards" id="cards"></div>
+</div></section>
+
+<section id="map"><div class="wrap">
+  <div class="center" style="margin-bottom:48px;max-width:672px">
+    <div class="eyebrow">Interactive Spatial View</div>
+    <h2 style="margin:4px 0">Virtual Room Map</h2>
+    <p class="sub">See at a glance who is presently inside the physical room vs. who is outside on campus.</p>
+  </div>
+  <div class="glass plan">
+    <div class="zone i">
+      <div class="zh"><div class="row" style="gap:12px"><span class="ic" style="background:rgba(168,85,247,.2);border:1px solid rgba(168,85,247,.4)">🚪</span><div><h3>INSIDE ROOM 304 <i class="dot" style="width:10px;height:10px;background:var(--gr2)"></i></h3><span class="sm" style="font-size:12px;color:#d8b4fe">Main Bedroom &amp; Study Hall</span></div></div><span class="zc mono" id="zIn">4 Present</span></div>
+      <div class="pp" id="ppIn"></div>
+      <div class="zf"><span class="row" style="gap:8px"><i class="dot" style="background:#818cf8"></i>Lights &amp; AC Active</span><span class="row" style="gap:8px"><i class="dot" style="background:var(--gr2)"></i>Door Unlocked (Roommates Inside)</span></div>
+    </div>
+    <div class="zone o zo">
+      <div class="zh"><div class="row" style="gap:12px"><span class="ic" style="background:rgba(244,63,94,.2);border:1px solid rgba(244,63,94,.4)">↗</span><div><h3>OUTSIDE ROOM <i class="dot" style="width:10px;height:10px;background:var(--ro2)"></i></h3><span style="font-size:12px;color:#fda4af">Campus / Mess / Library / Out</span></div></div><span class="zc mono" id="zOut">3 Outside</span></div>
+      <div class="pp" id="ppOut"></div>
+      <div class="zf">Roommates outside will shift left into the room upon clicking&nbsp;<b style="color:var(--gr2)">YES</b>.</div>
+    </div>
+  </div>
+</div></section>
+
+<section id="activity"><div class="wrap">
+  <div class="shead">
+    <div><div class="eyebrow">Audit &amp; Transparency</div><h2>Live Activity Stream</h2></div>
+    <button class="rst" id="reset">Reset Timeline</button>
+  </div>
+  <div class="glass feed" id="feed"></div>
+</div></section>
+</main>
+
+<footer class="main"><div class="wrap">
+  <div class="fm">
+    <a href="#top" class="logo"><i><b>🏠</b></i><div><strong>ROOM CHECK</strong><div style="font-size:12px;color:var(--t3)">Shared presence for Room 304</div></div></a>
+    <div class="fl"><a href="#how">How It Works</a><a href="#live">Live Status</a><a href="#members">Members</a><a href="#map">Room Map</a><a href="#activity">Activity</a></div>
+    <div style="font-size:12px;color:var(--t3)">Built for 7 roommates<br>Data stays on your device</div>
+  </div>
+  <div class="copy">© 2026 ROOM CHECK • Room 304 • All rights reserved</div>
+</div></footer>
+
+<script>
+const M=[
+ {n:'Dharshan',i:'DH',g:['#a855f7','#4f46e5'],in:true,t:0},
+ {n:'Kathirvel',i:'KV',g:['#3b82f6','#0891b2'],in:true,t:5},
+ {n:'Pradeep',i:'PR',g:['#10b981','#0d9488'],in:true,t:12},
+ {n:'Moulipriyan',i:'MP',g:['#f59e0b','#ea580c'],in:false,t:25},
+ {n:'Ravikaran',i:'RK',g:['#f43f5e','#db2777'],in:false,t:40},
+ {n:'Madhanesh',i:'MD',g:['#d946ef','#9333ea'],in:true,t:60},
+ {n:'Yogeshwaran',i:'YW',g:['#6366f1','#0284c7'],in:false,t:120}];
+const KEY='roomcheck304';
+let log=[{n:'Dharshan',in:true,m:0},{n:'Madhanesh',in:true,m:10},{n:'Moulipriyan',in:false,m:25},{n:'Ravikaran',in:false,m:40}];
+let filter='all';
+try{const s=JSON.parse(localStorage.getItem(KEY));if(s){s.m.forEach((v,i)=>{M[i].in=v.in;M[i].t=v.t});log=s.log}}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify({m:M.map(x=>({in:x.in,t:x.t})),log}))}catch(e){}};
+const $=id=>document.getElementById(id);
+const ago=m=>m<1?'Just now':m<60?m+' min ago':Math.round(m/60)+(m<120?' hour ago':' hours ago');
+const grad=g=>`linear-gradient(45deg,${g[0]},${g[1]})`;
+function setStatus(i,v){if(M[i].in===v)return;M[i].in=v;M[i].t=0;log.unshift({n:M[i].n,in:v,m:0});log=log.slice(0,6);save();render()}
+function render(){
+ const ins=M.filter(x=>x.in),outs=M.filter(x=>!x.in),a=ins.length,b=outs.length;
+ $('cards').innerHTML=M.map((x,i)=>({x,i})).filter(({x})=>filter==='all'||(filter==='in')===x.in).map(({x,i})=>{
+  const c=x.in?'in':'out',col=x.in?'var(--gr2)':'var(--ro)';
+  return `<div class="card ${x.in?'':'out'}"><div class="h"><div class="av" style="background:${grad(x.g)}"><b>${x.i}</b><s style="background:${col}"></s></div><div style="text-align:right"><span class="bd ${c}"><i class="dot" style="width:6px;height:6px;background:currentColor"></i>${x.in?'IN ROOM':'OUTSIDE'}</span><div class="mono" style="font-size:10px;color:var(--t3);margin-top:4px">${ago(x.t)}</div></div></div>
+  <h3>${x.n}</h3><div class="sm" style="color:var(--t3)">Roommate • Bed 0${i+1}</div>
+  <div class="act"><div class="lab" style="color:var(--t3)"><span>Change Status</span><span style="font-size:10px;color:#64748b">1-Tap Sync</span></div><div class="bt"><button class="yes ${x.in?'on':''}" onclick="setStatus(${i},true)">✓ YES</button><button class="no ${x.in?'':'on'}" onclick="setStatus(${i},false)">✕ NO</button></div></div></div>`}).join('');
+ const people=(l,c)=>l.map(x=>`<div class="p1"><div class="av" style="background:${c?grad(x.g):'none'}"><b>${x.i}</b><s></s></div>${x.n}<small>${c?'In Room':'Outside'}</small></div>`).join('')||'<span style="color:var(--t3);font-size:12px">Nobody here</span>';
+ $('ppIn').innerHTML=people(ins,1);$('ppOut').innerHTML=people(outs,0);
+ const nm=l=>l.slice(0,2).map(x=>x.n).join(', ')+(l.length>2?' +'+(l.length-2):'')||'—';
+ $('heroIn').textContent=a;$('heroOut').textContent=b;$('heroInN').textContent=nm(ins);$('heroOutN').textContent=nm(outs);
+ $('hdrStatus').textContent=`${a} in room • ${b} outside`;
+ $('sIn').textContent=a;$('sOut').textContent=b;$('sInT').textContent=a+' Members Inside';$('sOutT').textContent=b+' Members Outside';
+ const pi=Math.round(a/7*100);$('sInP').textContent=pi+'%';$('sOutP').textContent=(100-pi)+'%';$('bIn').style.width=pi+'%';$('bOut').style.width=(100-pi)+'%';
+ $('fIn').textContent=a;$('fOut').textContent=b;$('zIn').textContent=a+' Present';$('zOut').textContent=b+' Outside';
+ $('feed').innerHTML=log.map(e=>{const c=e.in?['16,185,129','var(--gr2)','✓','is IN ROOM']:['244,63,94','var(--ro2)','✕','is OUTSIDE'];
+  return `<div class="fr"><div class="row"><span class="fi" style="background:rgba(${c[0]},.2);border:1px solid rgba(${c[0]},.3);color:${c[1]}">${c[2]}</span><div><b>${e.n}</b><span style="color:${c[1]}">${c[3]}</span></div></div><span class="mono" style="font-size:12px;color:var(--t3)">${e.m<1?'Just now':e.m+' mins ago'}</span></div>`}).join('');
+}
+document.querySelectorAll('.f').forEach(btn=>btn.onclick=()=>{filter=btn.dataset.f;document.querySelectorAll('.f').forEach(x=>x.classList.toggle('on',x===btn));render()});
+$('reset').onclick=()=>{log=[];save();render()};
+render();
+</script>
+</body>
+</html>
